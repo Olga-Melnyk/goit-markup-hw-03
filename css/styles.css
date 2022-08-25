@@ -39,6 +39,14 @@ p {
   margin: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   display: block;
 }
@@ -71,7 +79,14 @@ img {
 
 /* header */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header .link-logo {
+  margin-right: 93px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -83,7 +98,21 @@ img {
   color: var(--black-txt-cl);
 }
 
+.header .nav {
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 .header .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -94,9 +123,17 @@ img {
   color: var(--accent-txt-cl);
 }
 
+.header-group {
+  display: flex;
+  align-items: center;
+}
+
 .header-group > .link {
-  margin-right: 50px;
   color: var(--secondary-txt-cl);
+}
+
+.header-group > .link:not(:first-child) {
+  margin-left: 50px;
 }
 
 .link-nav.active {
@@ -109,7 +146,7 @@ img {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Шапка */
+/* Герой */
 
 .section-hero {
   background-color: var(--main-bg-cl);
@@ -134,15 +171,13 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   border-color: transparent;
   border-radius: 4px;
 }
 
-.section-hero > .btn {
+.section-hero .btn {
+  display: block;
   margin: 0 auto;
   padding: 8px 28px;
   width: 216px;
@@ -151,6 +186,11 @@ img {
 }
 
 /* Особливості */
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
 
 .section-features .title {
   margin-bottom: 10px;
@@ -167,16 +207,27 @@ img {
 
 .section-features .list-item {
   width: 270px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Чим ми займаємося */
 
-.section-about-work > .section-title {
+.about-work-container {
+  padding-bottom: 94px;
+}
+
+.section-about-work .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+}
+
+.about-work-list {
+  display: flex;
+  gap: 30px;
 }
 
 /* Наша команда */
@@ -185,12 +236,22 @@ img {
   background-color: var(--light-bg-cl);
 }
 
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-team .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .section-team .team-name {
@@ -219,7 +280,13 @@ img {
   background-color: var(--main-bg-cl);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .link-logo {
+  display: block;
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -257,6 +324,18 @@ img {
 
 /* Портфоліо */
 
+.portfolio-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-btn-portfolio {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
 .item-btn {
   padding: 4px 20px;
   font-weight: 500;
@@ -272,6 +351,12 @@ img {
 .item-btn:focus {
   color: var(--white-txt-cl);
   background-color: var(--accent-bg-cl);
+}
+
+.list-img-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .img-name {
