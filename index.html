@@ -24,7 +24,7 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="page">
+  <body>
     <header class="header">
       <div class="container header-container">
         <a class="link-logo" href="./index.html">Web<span class="word">Studio</span></a>
@@ -47,14 +47,14 @@
     </header>
     <main>
       <!--Секція герой-->
-      <section class="section-hero">
+      <section class="section section-hero">
         <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn" type="button">Замовити послугу</button>
         </div>
       </section>
       <!--Секція особливості-->
-      <section class="section-features">
+      <section class="section section-features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list features-list">
@@ -84,10 +84,10 @@
         </div>
       </section>
       <!--Чим ми займаємося-->
-      <section class="section-about-work">
-        <div class="container about-work-container">
+      <section class="section section-work">
+        <div class="container work-container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list about-work-list">
+          <ul class="list work-list">
             <li class="list-item">
               <img
                 class="img"
@@ -119,11 +119,11 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="section-team">
+      <section class="section section-team">
         <div class="container team-container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team-list">
-            <li class="list-item">
+            <li class="team-item">
               <img
                 class="img"
                 src="./images/наша_команда/img-1.jpg"
@@ -131,10 +131,12 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="subtitle" lang="en">Product Designer</p>
+              <div class="team-name-container">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="subtitle" lang="en">Product Designer</p>
+              </div>
             </li>
-            <li class="list-item">
+            <li class="team-item">
               <img
                 class="img"
                 src="./images/наша_команда/img-2.jpg"
@@ -142,10 +144,12 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="subtitle" lang="en">Frontend Developer</p>
+              <div class="team-name-container">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="subtitle" lang="en">Frontend Developer</p>
+              </div>
             </li>
-            <li class="list-item">
+            <li class="team-item">
               <img
                 class="img"
                 src="./images/наша_команда/img-3.jpg"
@@ -153,10 +157,12 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="subtitle" lang="en">Marketing</p>
+              <div class="team-name-container">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="subtitle" lang="en">Marketing</p>
+              </div>
             </li>
-            <li class="list-item">
+            <li class="team-item">
               <img
                 class="img"
                 src="./images/наша_команда/img-4.jpg"
@@ -164,8 +170,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="subtitle" lang="en">UI Designer</p>
+              <div class="team-name-container">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="subtitle" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -175,8 +183,8 @@
       <div class="container footer-container">
         <a class="link-logo" href="./index.html">Web<span class="word">Studio</span></a>
         <address class="contacts-address" id="contacts">
-          <ul class="list">
-            <li class="list-item">
+          <ul class="list contacts-list">
+            <li class="contacts-item">
               <a
                 class="link-address link"
                 href="https://goo.gl/maps/eVXacCDSB5PppbcJ8"
@@ -186,10 +194,10 @@
                 м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
-            <li class="list-item">
+            <li class="contacts-item">
               <a class="link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="list-item">
+            <li class="contacts-item">
               <a class="link-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>

@@ -16,6 +16,7 @@
   --main-bg-cl: #2f303a;
   --secondary-bg-cl: #f5f5f5;
   --light-bg-cl: #f5f4fa;
+  --white-bg-cl: #ffffff;
 
   /* Others */
 }
@@ -39,6 +40,22 @@ p {
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -49,6 +66,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -73,6 +92,7 @@ img {
 
 .list {
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
@@ -85,13 +105,13 @@ img {
 }
 
 .header .link-logo {
-  margin-right: 93px;
-
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--accent-txt-cl);
+
+  margin-right: 93px;
 }
 
 .word {
@@ -110,12 +130,13 @@ img {
 
 .header .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header .link:hover,
@@ -150,39 +171,46 @@ img {
 
 .section-hero {
   background-color: var(--main-bg-cl);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-title {
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
+
   color: var(--white-txt-cl);
+
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .btn {
   font-family: inherit;
-  background-color: var(--accent-txt-cl);
-  color: var(--white-txt-cl);
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
+
+  background-color: var(--accent-txt-cl);
+  color: var(--white-txt-cl);
   border-color: transparent;
-  border-radius: 4px;
 }
 
 .section-hero .btn {
-  display: block;
-  margin: 0 auto;
-  padding: 8px 28px;
-  width: 216px;
-  min-height: 50px;
+  min-width: 216px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  margin: 0 auto;
+  padding: 10px 32px;
 }
 
 /* Особливості */
@@ -193,39 +221,40 @@ img {
 }
 
 .section-features .title {
-  margin-bottom: 10px;
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   font-size: 14px;
+
+  margin-bottom: 10px;
 }
 
 .section-features .desc {
   line-height: calc(24 / 14);
+
   color: var(--secondary-txt-cl);
 }
 
 .section-features .list-item {
   width: 270px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Чим ми займаємося */
 
-.about-work-container {
-  padding-bottom: 94px;
+.section-work {
+  padding-top: 0;
 }
 
-.section-about-work .section-title {
-  margin-bottom: 50px;
+.section-work .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
-.about-work-list {
+.work-list {
   display: flex;
   gap: 30px;
 }
@@ -236,17 +265,13 @@ img {
   background-color: var(--light-bg-cl);
 }
 
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .section-team .section-title {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -254,45 +279,57 @@ img {
   gap: 30px;
 }
 
+.team-item {
+  background: var(--white-bg-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-name-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .section-team .team-name {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 
 .section-team .subtitle {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  color: var(--secondary-txt-cl);
-}
 
-.section-team .img {
-  margin-bottom: 30px;
+  color: var(--secondary-txt-cl);
 }
 
 /* footer */
 
 .footer {
   background-color: var(--main-bg-cl);
-}
 
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer .link-logo {
   display: block;
-  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+
   color: var(--accent-txt-cl);
+
+  margin-bottom: 20px;
 }
 
 .footer .word {
@@ -300,8 +337,11 @@ img {
 }
 
 .contacts-address {
-  font-style: normal;
   line-height: calc(24 / 14);
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .link-address {
@@ -310,6 +350,7 @@ img {
 
 .link-mail {
   color: var(--white-txt-cl-60);
+
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -324,27 +365,29 @@ img {
 
 /* Портфоліо */
 
-.portfolio-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
 }
 
 .list-btn-portfolio {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
+
+  margin-bottom: 50px;
 }
 
 .item-btn {
-  padding: 4px 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   text-align: center;
+
   color: var(--main-txt-cl);
   background-color: var(--light-bg-cl);
+
+  padding: 6px 22px;
 }
 
 .item-btn:hover,
@@ -353,26 +396,35 @@ img {
   background-color: var(--accent-bg-cl);
 }
 
-.list-img-portfolio {
+.portfolio-card {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
+.portfolio-card-container {
+  background: var(--white-bg-cl);
+
+  border: 1px solid #eeeeee;
+
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .img-name {
-  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .subtitle-img {
   font-size: 16px;
   line-height: calc(30 / 16);
-  color: var(--secondary-txt-cl);
-}
 
-.section-portfolio .img {
-  margin-bottom: 20px;
+  color: var(--secondary-txt-cl);
 }
